@@ -3,7 +3,7 @@ import Card from '../components/Card.vue';
 </script>
 
 <template>
-    <div dir="rtl" class="px-5 py-4">
+    <div dir="rtl" class="sm-px-5 px-3 py-4">
         <div class="row">
           <Card />
           <Card />

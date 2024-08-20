@@ -12,11 +12,11 @@ import Pagination from "./components/Pagination.vue";
   <div class="here-image">
     <div dir="rtl" class="section">
       <h3 class="text-white fs-1">مرحبا بكم في موقعنا</h3>
-      <p class="text-white fs-5 mt-3">
+      <p class="text-white fs-5 mt-3 d-none d-sm-block">
         اكتشف مجموعة واسعة من المنتجات المميزة التي تلبي جميع احتياجاتك. نحن هنا لنقدم لك
         تجربة تسوق فريدة ومريحة، تجمع بين الجودة والتنوع بأسعار تنافسية.
-      </p>
-      <button type="button" class="btn btn-success btn-lg mt-4">تصفح منتجاتنا</button>
+      </p>      
+      <button type="button" class="btn btn-success sm-btn-lg mt-4">تصفح منتجاتنا</button>
     </div>
   </div>
 
@@ -44,5 +44,12 @@ import Pagination from "./components/Pagination.vue";
 }
 p {
   width: 35%;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding-top: 18rem;
+    padding-right: 1rem;
+  }
 }
 </style>

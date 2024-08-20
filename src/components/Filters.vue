@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div dir="rtl" class="px-5 py-4">
+  <div dir="rtl" class="sm-px-5 px-3 py-4">
     <h4>منتجاتنا</h4>
     <div>
       <hr />
