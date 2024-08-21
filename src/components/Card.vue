@@ -1,17 +1,31 @@
 <script setup></script>
 
 <template>
-  <div class="lg:w-1/4 md:w-1/3 sm:w-full mb-4">
-    <div class="bg-white rounded-md shadow-sm pb-2">
-      <img src="../assets/1297888.jpg" alt="التفاح" class="w-full h-44 object-cover rounded-t-md" />
+  <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+    <div class="card pb-2">
+      <img src="../assets/1297888.jpg" alt="التفاح" class="card-img" />
       <div class="px-2">
-        <h4 class="py-2 text-lg font-semibold">التفاح</h4>
-        <p class="text-gray-700">8,50 درهم</p>
-        <div class="flex justify-between items-center">
-          <button type="button" class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">إضافة للسلة</button>
-          <span class="text-gray-500 text-sm">توصيل مجاني</span>
+        <h4 class="py-2">التفاح</h4>
+        <p>8,50 درهم</p>
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-info">إضافة للسلة</button>
+            <span class="text-secondary fs-6">توصيل مجاني</span>
         </div>
+        
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.card {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 0px 1px 0px black;
+}
+.card-img {
+  width: 100%;
+  height: 44%;
+  object-fit: cover;
+}
+</style>

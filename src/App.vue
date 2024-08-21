@@ -9,14 +9,14 @@ import Pagination from "./components/Pagination.vue";
 <template>
   <Navbar />
 
-  <div class="here-image flex items-center justify-center text-right">
-    <div class="section text-white">
-      <h3 class="text-4xl">مرحبا بكم في موقعنا</h3>
-      <p class="mt-3 hidden sm:block text-lg max-w-xs">
+  <div class="here-image">
+    <div dir="rtl" class="section">
+      <h3 class="text-white fs-1">مرحبا بكم في موقعنا</h3>
+      <p class="text-white fs-5 mt-3 d-none d-sm-block">
         اكتشف مجموعة واسعة من المنتجات المميزة التي تلبي جميع احتياجاتك. نحن هنا لنقدم لك
         تجربة تسوق فريدة ومريحة، تجمع بين الجودة والتنوع بأسعار تنافسية.
-      </p>
-      <button type="button" class="mt-4 btn btn-success sm:btn-lg">تصفح منتجاتنا</button>
+      </p>      
+      <button type="button" class="btn btn-success sm-btn-lg mt-4">تصفح منتجاتنا</button>
     </div>
   </div>
 
@@ -31,10 +31,25 @@ import Pagination from "./components/Pagination.vue";
 
 <style scoped>
 .here-image {
-  @apply w-full h-screen bg-cover bg-center;
+  width: 100%;
+  height: 100vh;
   background-image: url("./assets/1297888.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
 .section {
-  @apply pt-40 pr-16 sm:pt-72 sm:pr-4;
+  padding-top: 10rem;
+  padding-right: 4rem;
+}
+p {
+  width: 35%;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding-top: 18rem;
+    padding-right: 1rem;
+  }
 }
 </style>
